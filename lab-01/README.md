@@ -114,7 +114,7 @@ class Quiz {
     /**
      * @return количество раз, когда был предоставлен неправильный ввод
      */
-    int getIncorrectInputNumber {
+    int getIncorrectInputNumber() {
         // ...
     }
     
