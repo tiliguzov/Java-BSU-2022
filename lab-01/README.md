@@ -279,8 +279,8 @@ class PoolTaskGenerator implements TaskGenerator {
      * @param tasks          задания, которые в конструктор передаются через запятую
      */
     PoolTaskGenerator(
-            boolean allowDuplicate,
-            Task… tasks
+        boolean allowDuplicate,
+        Task… tasks
     ) {
         // ...
     }
@@ -292,8 +292,8 @@ class PoolTaskGenerator implements TaskGenerator {
      * @param tasks          задания, которые передаются в конструктор в Collection (например, {@link LinkedList})
      */
     PoolTaskGenerator(
-            boolean allowDuplicate,
-            Collection<Task> tasks
+        boolean allowDuplicate,
+        Collection<Task> tasks
     ) {
         // ...
     }
