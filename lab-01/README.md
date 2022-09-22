@@ -279,7 +279,8 @@ class PoolTaskGenerator implements TaskGenerator {
      * @param tasks          задания, которые в конструктор передаются через запятую
      */
     PoolTaskGenerator(
-        boolean allowDuplicate, Task… tasks
+        boolean allowDuplicate, 
+        Task… tasks
     ) {
         // ...
     }
