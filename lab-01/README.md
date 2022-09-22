@@ -243,7 +243,7 @@ class GroupTaskGenerator implements TaskGenerator {
      *
      * @param generators генераторы, которые в конструктор передаются через запятую
      */
-    GroupTaskGenerator(TaskGenerator… generators) {
+    GroupTaskGenerator(TaskGenerator... generators) {
         // ...
     }
 
