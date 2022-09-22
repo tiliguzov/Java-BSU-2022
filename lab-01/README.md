@@ -93,7 +93,7 @@ class Quiz {
     /**
      * @return завершен ли тест
      */
-    bool isFinished() {
+    boolean isFinished() {
         // ...
     }
     
@@ -114,7 +114,7 @@ class Quiz {
     /**
      * @return количество раз, когда был предоставлен неправильный ввод
      */
-    int getIncorrectInputNumber {
+    int getIncorrectInputNumber() {
         // ...
     }
     
@@ -183,10 +183,10 @@ class ExpressionTaskGenerator implements TaskGenerator {
     ExpressionTaskGenerator(
         int minNumber,
         int maxNumber,
-        bool generateSum,
-        bool generateDifference,
-        bool generateMultiplication,
-        bool generateDivision
+        boolean generateSum,
+        boolean generateDifference,
+        boolean generateMultiplication,
+        boolean generateDivision
     ) {
         // ...
     }
@@ -216,10 +216,10 @@ class EquationTaskGenerator implements TaskGenerator {
     EquationTaskGenerator(
         int minNumber,
         int maxNumber,
-        bool generateSum,
-        bool generateDifference,
-        bool generateMultiplication,
-        bool generateDivision
+        boolean generateSum,
+        boolean generateDifference,
+        boolean generateMultiplication,
+        boolean generateDivision
     ) {
         // ...
     }
@@ -240,22 +240,22 @@ class EquationTaskGenerator implements TaskGenerator {
 class GroupTaskGenerator implements TaskGenerator {
     /**
      * Конструктор с переменным числом аргументов
-     * 
+     *
      * @param generators генераторы, которые в конструктор передаются через запятую
      */
     GroupTaskGenerator(TaskGenerator… generators) {
         // ...
     }
-    
+
     /**
      * Конструктор, который принимает коллекцию генераторов
-     * 
+     *
      * @param generators генераторы, которые передаются в конструктор в Collection (например, {@link ArrayList})
      */
     GroupTaskGenerator(Collection<Generator> generators) {
         // ...
     }
-    
+
     /**
      * @return результат метода generate() случайного генератора из списка.
      *         Если этот генератор выбросил исключение в методе generate(), выбирается другой.
@@ -264,6 +264,7 @@ class GroupTaskGenerator implements TaskGenerator {
     Task generate() {
         // ...
     }
+}
 ```
 
 ### PoolTaskGenerator 
@@ -273,36 +274,37 @@ class GroupTaskGenerator implements TaskGenerator {
 class PoolTaskGenerator implements TaskGenerator {
     /**
      * Конструктор с переменным числом аргументов
-     * 
+     *
      * @param allowDuplicate разрешить повторения
      * @param tasks          задания, которые в конструктор передаются через запятую
      */
     PoolTaskGenerator(
-        bool allowDuplicate,
-        Task… tasks
+        boolean allowDuplicate,
+        Task... tasks
     ) {
         // ...
     }
-    
+
     /**
      * Конструктор, который принимает коллекцию заданий
-     * 
+     *
      * @param allowDuplicate разрешить повторения
      * @param tasks          задания, которые передаются в конструктор в Collection (например, {@link LinkedList})
      */
     PoolTaskGenerator(
-        bool allowDuplicate,
+        boolean allowDuplicate,
         Collection<Task> tasks
     ) {
         // ...
     }
-    
+
     /**
      * @return случайная задача из списка
      */
     Task generate() {
         // ...
     }
+}
 ```
 
 ### TextTask
